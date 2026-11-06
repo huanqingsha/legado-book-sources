@@ -71269,5 +71269,39 @@
       "updateTime": "$.updateTime"
     },
     "weight": 0
+  },
+  {
+    "bookSourceName": "爱下电子书(ixdzs8)",
+    "bookSourceUrl": "https://ixdzs8.com",
+    "bookSourceType": 0,
+    "bookSourceGroup": "小说",
+    "enabled": true,
+    "enabledExplore": false,
+    "searchUrl": "/bsearch?q={{key}}",
+    "ruleSearch": {
+      "bookList": "class.u-list@tag.li",
+      "name": "class.bname@text",
+      "author": "class.bauthor@text",
+      "bookUrl": "class.bname@tag.a@href",
+      "kind": "class.lz@text",
+      "lastChapter": "class.l-text@tag.p@tag.a@text##.*最新章节[:：]?##"
+    },
+    "ruleBookInfo": {
+      "name": "css:meta[property=\"og:novel:book_name\"]@content",
+      "author": "css:meta[property=\"og:novel:author\"]@content",
+      "kind": "css:meta[property=\"og:novel:category\"]@content",
+      "intro": "css:meta[property=\"og:description\"]@content",
+      "coverUrl": "css:meta[property=\"og:image\"]@content",
+      "lastChapter": "css:meta[property=\"og:novel:latest_chapter_name\"]@content",
+      "tocUrl": ""
+    },
+    "ruleToc": {
+      "chapterList": "class.clist@tag.li",
+      "chapterName": "text",
+      "chapterUrl": "href"
+    },
+    "ruleContent": {
+      "content": "css:div.page-content@text"
+    }
   }
 ]
