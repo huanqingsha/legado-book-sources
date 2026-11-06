@@ -59933,5 +59933,9 @@
     },
     "searchUrl": "/modules/article/search.php,{'method':'post','body':'searchkey={{key}}&action=login&searchtype=all&submit='}",
     "weight": 25
+  },
+  {
+    "bookSourceName": "新源B",
+    "bookSourceUrl": "https://fake-test-source.example.com"
   }
 ]
